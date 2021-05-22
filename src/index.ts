@@ -1,7 +1,5 @@
 import dotenv from 'dotenv'
 import path from 'path'
-const dir =__dirname.split('\\').filter(e=>e=="build"?false:true).join("\\")
-dotenv.config({ path: path.join(dir, '.env') })
 import express from 'express'
 import Discord from 'discord.js'
 import { modifyRole, authMiddleware, SERVER } from './util'
